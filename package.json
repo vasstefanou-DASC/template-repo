@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "deploy": "git subtree push --prefix dist origin gh-pages",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -28,8 +29,12 @@
     "@eslint/markdown": "^8.0.2",
     "css-loader": "^7.1.4",
     "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
     "globals": "^17.7.0",
     "html-webpack-plugin": "^5.6.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "3.9.4",
     "style-loader": "^4.0.0",
     "webpack": "^5.107.2",
     "webpack-cli": "^7.0.3",
@@ -38,5 +43,10 @@
   },
   "dependencies": {
     "date-fns": "^4.4.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write",
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

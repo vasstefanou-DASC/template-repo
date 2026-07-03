@@ -1,5 +1,5 @@
 {
-  "name": "todo-list-odin",
+  "name": "template-repo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,18 +11,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vasstefanou-DASC/todo-list-odin.git"
+    "url": "git+https://github.com/vasstefanou-DASC/template-repo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/vasstefanou-DASC/todo-list-odin/issues"
+    "url": "https://github.com/vasstefanou-DASC/template-repo/issues"
   },
-  "homepage": "https://github.com/vasstefanou-DASC/todo-list-odin#readme",
+  "homepage": "https://github.com/vasstefanou-DASC/template-repo#readme",
   "devDependencies": {
+    "@eslint/css": "^1.3.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.0.0",
+    "@eslint/markdown": "^8.0.2",
     "css-loader": "^7.1.4",
+    "eslint": "^10.6.0",
+    "globals": "^17.7.0",
     "html-webpack-plugin": "^5.6.7",
     "style-loader": "^4.0.0",
     "webpack": "^5.107.2",
